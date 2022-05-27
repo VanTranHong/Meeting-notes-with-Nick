@@ -18,6 +18,8 @@ We try to use mutual information and Wasserstein difference to see relationship 
 Our thinking:
 The signature based method and anomaly method of anomaaly detection should be complementary to achieve best performance.
 Normal data is fixed, does not change, does not reflect the anomaly that one person sees. Thus, not useful?
+We also see that classifier really matters in choosing what data to augnent. Thus, criteria about what data to use should also depend on the classifier used for anomaly detection.
+
 
 
 
