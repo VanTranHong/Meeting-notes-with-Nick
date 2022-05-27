@@ -2,3 +2,22 @@ AISEC deadline on June 24
 
 What have we done?
 
+Datasets: we have 2 sets of data CIC and IoT data
+Classifier: KDE (unsupervised)
+Data to share (clean)
+
+
+Our first approach: Data the extracted features.
+Problem:
+- Data sharing sometimes help and some times does not help
+Our resolution:
+We try to answer the question of how to discover if some information is useful, some information is not useful?
+How to determine how much data should be shared? How much to combined between the shared data and our own data?
+We try to use mutual information and Wasserstein difference to see relationship between the data
+
+Our thinking:
+The signature based method and anomaly method of anomaaly detection should be complementary to achieve best performance.
+Normal data is fixed, does not change, does not reflect the anomaly that one person sees. Thus, not useful?
+
+
+
