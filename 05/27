@@ -1,0 +1,40 @@
+AISEC deadline on June 24
+
+
+
+May 27
+
+
+What have we done?
+
+Datasets: we have 2 sets of data CIC and IoT data
+Classifier: KDE (unsupervised)
+Data to share (clean)
+Our first approach: Data the extracted features.
+Problem:
+- Data sharing sometimes help and some times does not help
+Our resolution:
+We try to answer the question of how to discover if some information is useful, some information is not useful?
+How to determine how much data should be shared? How much to combined between the shared data and our own data?
+We try to use mutual information and Wasserstein difference to see relationship between the data
+Our thinking:
+The signature based method and anomaly method of anomaaly detection should be complementary to achieve best performance.
+Normal data is fixed, does not change, does not reflect the anomaly that one person sees. Thus, not useful?
+We also see that classifier really matters in choosing what data to augnent. Thus, criteria about what data to use should also depend on the classifier used for anomaly detection.
+
+Summary of the paper
+- The question they want to answer is : What information can defenders share across networks to help machine learning-based threat detection adapt to new coordinated attack?
+- They propose: 
+
+1. sharing an entire ML model: each trains the ML model on its network logs, share the model directly with the other network (what criteria to see how well it work?)
+
+2. sharing weights for an emsemble model: each network train 2 ensembles models independently on their own logs. COmputed the feature weights based on the detected samples and share them with the other network. However, in my opinion, each type of attacks might have different weights. We are also unsure what are the attacks the other network face.
+
+
+3. sharing weights for an ensemble model and feature distribution information
+- They use the PORTFILER system, an unsupervised ML thread detection system that uses Zeek network connection logs collected at the border of the enterprise network. PORTFILER monitors a set of configurable ports, learns the distribution of network traffic on each port and generate an anomaly score at test time.
+
+
+
+
+
